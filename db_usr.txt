@@ -1,0 +1,3 @@
+Username,Nume,Prenume,Email,Telefon,Parola,Admin,Poza
+gigi,Gigi,Gigi,gigi@gigi.gigi,0744123123,gigi!,no
+test,Test,Testut,test@test.test,0711222333,test!,no

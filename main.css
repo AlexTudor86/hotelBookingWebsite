@@ -1,0 +1,433 @@
+:root {
+	--global-width: 70%;
+	--menu-width: 82%;
+	--menu-item-width: 20%;
+	--menu-item-margin: 5%;
+}
+
+div {
+	box-sizing: border-box;
+	float: left;
+}
+
+#header {
+	width: 70%;
+	position: static;
+	margin: 0 calc((100% - var(--global-width)) / 2);	
+	top: 0;
+	left: 15%;
+	background-color: aliceblue;
+	border-radius: 5px;
+}
+
+#menu {
+	width: var(--menu-width);
+	height: 120px;
+	padding: 20px;
+}
+
+#logo {
+	width: calc(100% - var(--menu-width));
+	height: 120px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	overflow: hidden;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#menu ul > li {
+	display: inline-block;
+	width: var(--menu-item-width);
+	border-radius: 5px;
+	box-shadow: 4px 4px 8px;
+}
+
+#menu ul > li:first-of-type {
+	background-color: #ddd;
+}
+
+#menu ul > li:not(:first-child) {
+	background-color: #999;
+}
+
+#menu ul > li:not(:last-child) {
+	margin-right: var(--menu-item-margin);
+}
+
+#logo img {
+	width: 100%;
+}
+
+#menu a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+}
+
+#menu a:hover {
+	position: relative;
+	top: 1px;
+	left: 2px;
+}
+
+#main {
+	position: relative;
+	width: var(--global-width);
+	padding: 15px 45px;
+	margin: 30px 15%;
+	height: 100vh;
+}
+
+/* setare imagine de fundal */
+
+#main::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url('images/cover.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+	opacity: 0.18;
+	z-index: -1;
+}
+
+/* Fonts */
+
+#menu h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Niconne', cursive;
+	font-size: 50px;
+	text-align: center;
+	word-spacing: 15px;
+	letter-spacing: 3px;
+}
+
+h2, h3 {
+	font-family: 'Vollkorn', serif;
+	word-spacing: 6px;
+	letter-spacing: 2px;
+}
+
+h3 {
+	font-style: italic;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 38px;
+	letter-spacing: 1px;
+}
+
+#main p:first-of-type {
+	text-indent: 40px;
+}
+
+#main h2 {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+div.form-control {
+	position: relative;
+	float: none;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding : 5px;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+}
+
+div.form-ctrl {
+	float: none;
+	width: 30%;
+	margin-bottom: 18px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+}
+
+input[type='text'], input[type='password'], input[type='email'] {
+	width : 50%;
+	border-radius: 10px;
+}
+
+div.form-ctrl input[type='text'], div.form-ctrl input[type='password'] {
+	width: 75%;
+	float: right;
+}
+
+input:focus {
+	background-color: aliceblue;
+}
+
+textarea {
+	border-radius: 10px;
+}
+
+select {
+	border-radius: 10px;
+	width: 50%;
+	text-align: center;
+}
+
+input[type='submit'] {
+	font-size: 16px;
+	width : 35%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px;
+	cursor: pointer;
+}
+
+#main p > img:nth-of-type(1) {
+	float: right;
+	width: 22%;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+#main > img:nth-of-type(1) {
+	float: left;
+	width: 22%;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+#main p:nth-of-type(2) > img:nth-of-type(1) {
+	float: right;
+	width: 22%;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+#main h3 {
+	margin-top: 0;
+}
+
+#footer {
+	float: none;
+	clear: left;
+	position: fixed;
+	z-index: 2;
+	width: var(--global-width);
+	bottom: 5px;
+	left: calc((100% - var(--global-width)) / 2);
+	height: 60px;
+	padding: 5px 45px;
+	border-radius: 5px;
+	background-color: aliceblue;
+}
+
+span {
+	float: right;
+}
+
+/* Rezervari */ 
+
+div.rezervare {
+	padding: 10px;
+	width: 250px;
+	height: 280px;
+	margin-right: 5px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	text-align: center;
+	overflow: normal;
+}
+
+div.rezervare:nth-last-of-type(2) {
+	margin-left: 100px;
+}
+
+div.rezervare:nth-last-of-type(2) > div {
+	height: auto;
+}
+
+div.rezervare img {
+	margin-top: 10px;
+	width: 100%;
+}
+
+div.rezervare label {
+	text-decoration: underline;
+}
+
+div.rezervare:nth-last-of-type(2) label {
+	text-decoration: none;
+	float: left;
+}
+
+div.rezervare:nth-last-of-type(2) label:nth-of-type(3) {
+	float: none;
+}
+
+div.rezervare:nth-last-of-type(2) label:nth-of-type(4) {
+	float: none;
+}
+
+div.rezervare:nth-last-of-type(2) label:nth-of-type(5) {
+	float: none;
+}
+
+input[type="date"] {
+	float: right;
+	border-radius: 3px;
+}
+
+/*
+div.rate {
+	visibility: hidden;
+}
+*/
+
+div.rez {
+	float: none;
+	clear: left;
+	text-align: center;
+}
+
+.eroare {
+	border: 2px solid red;
+}
+
+div.form-control small {
+	position: absolute;
+	color: red;
+	top: 50px;
+	left: 195px;
+}
+
+
+div.form-ctrl small {
+	position: absolute;
+	color: red;
+	top: 600px;
+	left: 450px;
+}
+
+
+.hidden {
+	display: none;
+}
+
+.showpic {
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	border-radius:50px;
+	position:relative;
+	bottom:44px;
+	background-image: url('images/user.png');	
+	background-repeat: no-repeat;
+	background-position:center center; 
+	background-size: 100%;
+	border: 2px solid black;
+}
+
+input[value*="info"] {
+	width: 60%;
+}
+
+#tabel_rezervari {
+	display: block;
+	float: left;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#tabel_rezervari:nth-of-type(odd) {
+	margin-right: 125px;
+}
+
+#tabel_rezervari th, td {
+	border: 1px solid black;
+}
+			
+#tabel_rezervari th, td {
+	padding: 15px;
+	width: 80px;
+	height: 20px;
+}
+
+#tabel_rezervari th { 
+	text-align: center;
+	vertical-align: center;
+	background-color: lightblue;
+}
+
+#tabel_rezervari td {
+	text-align: left;
+	vertical-align: bottom;
+}
+
+#tabel_rezervari tr:hover {
+	background-color: aliceblue;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1810px) {
+	#main::before {
+		background-repeat: repeat-y;
+	}
+}
+
+@media (max-width: 1560px) {
+	input[type='submit'] {
+		width : 250px;
+	}
+}
+
+@media (max-width: 1200px) {
+	#footer {
+		position: static;
+		margin: 0 auto;
+		}
+	
+	#logo {
+		display: none;
+	}
+	
+	:root {
+		--menu-width: 100%;
+		--menu-item-width: 22%;
+		--menu-item-margin: 0%;
+		--menu-item-margin: 15px
+	}
+	
+	div#menu {
+		padding: 15px 0;
+	}
+}
+
+
+@media (max-width: 1020px) {
+	input[type='text'], input[type='password'], input[type='email'], input[type="select"], select, 
+	div.form-ctrl input[type="text"], div.form-ctrl input[type="password"] {
+		width : 150px;
+		border-radius: 10px;
+	}
+	
+	#main {
+		height: auto;
+	}
+	
+}
