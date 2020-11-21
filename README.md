@@ -10,5 +10,5 @@
 * option to save reservation details locally
 
 ![features](./screenshots/Capture1.JPG)
-![features](./screenshots/Capture2.jpg)
-![features](./screenshots/Capture3.jpg)
+![features](./screenshots/Capture2.JPG)
+![features](./screenshots/Capture3.JPG)
