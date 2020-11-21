@@ -9,6 +9,6 @@
 * remember me option
 * option to save reservation details locally
 
-![features](./screenshots/Capture1.jpg)
+![features](./screenshots/Capture1.JPG)
 ![features](./screenshots/Capture2.jpg)
 ![features](./screenshots/Capture3.jpg)
