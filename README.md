@@ -12,5 +12,7 @@
 * admin account can see all reservation
 
 ![features](./screenshots/Capture1.JPG)
+
 ![features](./screenshots/Capture2.JPG)
+
 ![features](./screenshots/Capture3.JPG)
